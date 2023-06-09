@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    font-family: 'Montserrat';
+    font-family:  'Courier New', Courier, monospace;
     background: #223D58;
     position: relative;
 }
@@ -16,8 +16,59 @@ header h1 {
     display: none;
 }
 
-header nav {
-    display: none;
+header nav .ioMenuMovil {
+    height: 25px;
+    width: 120px;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 0px 0px 0px 10px;
+    padding-top: 5px;
+}
+header nav .ioMenuMovil img {
+    width: 70%;
+}
+
+header nav #card_menu{
+    /* display: none; */
+    position: relative;
+    width: 230px;
+    background: white;
+    top: -30px;
+    left: 0px;
+    border-right: 3px solid #AFAEAE;
+    z-index: 999;
+    padding-bottom: 50px;
+}
+
+header nav #card_menu #logo_menu {
+    /* background: red; */
+    height: 200px;
+    width: 80%;
+    margin: 35px 0px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    
+}
+header nav #card_menu #logo_menu img {
+    width: 100%;
+
+}
+header nav #card_menu ul {
+   
+    margin-top: -20px;
+
+}
+header nav #card_menu ul li {
+   list-style: none;
+   font-size: 1.5em;
+   line-height: 37px;
+   
+
+}
+header nav #card_menu ul li a {
+  text-decoration: none;
+  color: black;
+
 }
 
 header #prev_section, 
@@ -52,6 +103,42 @@ header #next_section img {
 
 }
 
+#slider{
+    width: 100%;
+    position: relative;
+    height: 600px;
+    background: black;
+    
+}
+
+#slider section.slide {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+#slider #home {
+    height: 500px;
+    background: orange;
+}
+#slider #aboutme {
+    height: 400px;
+    background: red;
+}
+#slider #skills {
+    height: 300px;
+    background: green;
+}
+#slider #portfolio {
+    height: 200px;
+    background: blue
+}
+#slider #blog {
+    height: 100px;
+    background: purple
+}
+
 @media screen and (min-width: 480px) {
     body {
         background: red;
@@ -76,7 +163,7 @@ header #next_section img {
     header h1 {
         display: inline-block;
         width: 20%;
-        background: red;
+        /* background: red; */
         height: 50px;
         margin: 0px;
         margin-left: 80px;
@@ -84,12 +171,74 @@ header #next_section img {
         min-width: 200px;
     }
 
-    header h1 > * {
+    header h1 > *{
         display: inline-block;
         vertical-align: middle;
         text-decoration: none;
         color: white;
+        font-size: 0.4em;
+        margin: 0px 3px;
     }
+
+    header h1 figure {
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+    }
+
+    header h1 figure img {
+        width: 100%;
+    }
+
+    header nav {
+        display: inline-block;
+        vertical-align: middle;
+        width: 62%;
+        position: relative;
+        /* Esto lo puse yo */
+        /* top: -20px;   */
+    }
+    header nav #showMenu,
+    header nav #hideMenu {
+        display: none;
+    }
+
+    header nav #card_menu {
+        display: inline-block;
+        border: none;
+        background: none;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 0%;
+    }
+    header nav #card_menu figure {
+        display: none;
+    }
+
+    header nav #card_menu ul {
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+
+    }
+
+    header nav #card_menu ul li {
+        display: inline-block;
+        width: 75px;
+        text-align: center;
+        font-size: .9em;
+        margin-top: 5px;
+        margin: 0px -2px;
+    }
+
+    header nav #card_menu ul li a {
+        color: white;
+    }
+
+
+
 
     header #prev_section, 
     header #next_section  {

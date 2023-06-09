@@ -16,41 +16,137 @@
         <h1>
             <a>
                 <figure> 
-                    <img src="/public/348430112_6233413763371444_6746029110138233744_n.png" > 
+                    <img src="/public/programador.png" > 
                 </figure>
             </a>
             <a href="index.html">Sergio Calbiño</a>
         </h1>
 
         <nav id="ioMenu">
-            <figure id="showMenu" class="ioMenuMovil" >
+            <figure id="showMenu" class="ioMenuMovil" onclick="displayMenu()" >
                 <img src="/public/Menu.png">
             </figure>
 
             <div id="card_menu">
-                <figure id="hideMenu" class="ioMenuMovil" >
+                <figure id="hideMenu" class="ioMenuMovil" onclick="displayMenu()" >
                     <img src="/public/img_487255.png">
                 </figure>
 
                 <figure id="logo_menu" >
-                    <img src="/public/348430112_6233413763371444_6746029110138233744_n.png">
+                    <img src="/public/programador.png">
                 </figure>
                 
                 
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre mi</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a onclick = "navSection('home') "href="#">Home</a></li>
+                    <li><a onclick = "navSection('aboutme') "href="#">Sobre mi</a></li>
+                    <li><a onclick = "navSection('skills') "href="#">Skills</a></li>
+                    <li><a onclick = "navSection('portfolio') "href="#">Portfolio</a></li>
+                    <li><a onclick = "navSection('blog') "href="#">Blog</a></li>
+                    <li><a onclick = "navSection('contactos') "href="#">Contacto</a></li>
                 </ul>
             </div>
 
         </nav>
 
-        <div id="prev_section" > <img src="/public/circle-left.png" > </div>
-        <div id="next_section" > <img src="/public/circle-left.png" > </div>
+        <div id="prev_section" onclick="displaysection('prev')"> <img src="/public/circle-left.png" > </div>
+        <div id="next_section" onclick="displaysection('next')" > <img src="/public/circle-left.png" > </div>
     </header>
+
+    <div id="slider" >
+        <section class="slide" id="home" style="display:block" ></section>
+        <section class="slide" id="aboutme" style="display:none" ></section>
+        <section class="slide" id="skills" style="display:none"></section>
+        <section class="slide" id="portfolio" style="display:none"></section>
+        <section class="slide" id="blog" style="display:none"></section>
+    </div>
+
+    <script>
+            let sections = new Array(5)
+            sections[0] = "home"
+            sections[1] = "aboutme"
+            sections[2] = "skills"
+            sections[3] = "portfolio"
+            sections[4] = "blog"
+        
+        function displayMenu() {
+           let display;
+           let card_menu = document.getElementById('card_menu')
+            display = card_menu.style.display;
+            if (display === 'none') {
+                card_menu.style.display = 'block'
+            } else {
+                card_menu.style.display = 'none'
+            }
+        }
+
+        function setColors(i) {
+            var searh;
+            var bkgr_body = '#233D58'
+            var bkgr_menu = '#233D58'
+            if (sections[i] === 'home') {
+                bkgr_body = '#233D58'
+                bkgr_menu = '#233D58'
+            } else {
+                bkgr_body = '#f1f1f1'
+                bkgr_menu = '#29abe2'
+            }
+                searh = document.getElementById(sections[i])
+                searh.style.background = bkgr_body;
+                let menu = document.getElementsByTagName('header')[0];
+                menu.style.background = bkgr_menu;
+        }
+
+        function navSection(nav) {
+            let searh;
+            let show;
+            
+            for (var i = 0; i < 5; i++) {
+                searh = document.getElementById(sections[i])
+                searh.style.display = 'none';
+
+                if (sections[i] == nav) {
+                    searh.style.display = 'block';
+                    setColors(i)
+
+                }
+                
+            }
+        }
+
+        function displaysection(nav) {
+        
+
+            let searh;
+            let show;
+            for (var i = 0; i < 5; i++) {
+                searh = document.getElementById(sections[i])
+                show = searh.style.display;
+
+                if (show === 'block') {
+                    searh.style.display = 'none';
+                    if (nav === 'next') {
+                        i++;
+                        if (i > 4) {
+                            i = 0;
+                        }
+                    }
+                    if (nav === 'prev') {
+                        i--
+                        if (i < 0) {
+                            i = 4;
+                        }
+                    }
+                    searh = document.getElementById(sections[i])
+                    searh.style.display = 'block'
+                    break
+                }
+                
+            }
+           setColors(i)
+        }
+
+    </script>
+
 </body>
 </html>
