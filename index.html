@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
     <script src="/js/modernizr-custom.js" ></script>
     <link rel="stylesheet" href="/css/design.css"></link>
+    <link rel="stylesheet" href="/css/icomon/style.css"></link>
 </head>
 <body>
     <header>
@@ -43,7 +45,7 @@
                     <li><a onclick = "navSection('skills') "href="#">Skills</a></li>
                     <li><a onclick = "navSection('portfolio') "href="#">Portfolio</a></li>
                     <li><a onclick = "navSection('blog') "href="#">Blog</a></li>
-                    <li><a onclick = "navSection('contactos') "href="#">Contacto</a></li>
+                    <li><a onclick="displayFormContact('block') "href="#" >Contacto</a></li>
                 </ul>
             </div>
 
@@ -54,11 +56,47 @@
     </header>
 
     <div id="slider" >
-        <section class="slide" id="home" style="display:block" ></section>
+        <section class="slide" id="home" style="display:block" >
+        
+            <div class="mainanimation">
+
+            </div>
+
+            <div class="mainlogo">
+                <h2> <strong> Web Developer Full Stack </strong> </h2>
+                <figure> <img src="/public/programador.png" > </figure>
+            </div>
+
+            <div class="buttonpage">
+                <div id="contratame" onclick="displayFormContact('block')" >
+                    Contratame
+                </div>
+                <a href="docs/CV+SERGIO+CALBIÑO.pdf"> Descargar CV </a>
+            </div>
+
+        </section>
+        
+        
         <section class="slide" id="aboutme" style="display:none" ></section>
         <section class="slide" id="skills" style="display:none"></section>
         <section class="slide" id="portfolio" style="display:none"></section>
         <section class="slide" id="blog" style="display:none"></section>
+    </div>
+
+    <div id="contact_form">
+        <form action="contact.php" id="form1" name="form1" method="post">
+            <div id="close_form" onclick="closeForm('none')" ></div>
+            <figure id="logo_mensaje"> <img src="/public/carta2.png" alt=""> </figure>
+            <p>Hola!</p>
+            <input type="text" name="name" id="name" placeholder="Tu nombre" >
+            <input type="email" name="email" id="email" placeholder="Tu email" >
+            <textarea name="message" id="message" placeholder="Escribe un mensaje" ></textarea>
+            <input type="submit" name="Submit" id="button" value="ENVIAR">
+        </form>
+    </div>
+
+    <div id="contact_button" onclick="displayFormContact('block')" >
+        
     </div>
 
     <script>
@@ -144,6 +182,17 @@
                 
             }
            setColors(i)
+        }
+
+        function displayFormContact(status) {
+            var form = document.getElementById('contact_form');
+            form.style.display = status
+        }
+
+        function closeForm(status) {
+            var form = document.getElementById('contact_form')
+            form.style.display = status
+            
         }
 
     </script>
