@@ -47,3 +47,7 @@
 .icon-circle-up:before {
   content: "\ea41";
 }
+
+.icon-cross:before {
+  content: "\ea0f";
+}
