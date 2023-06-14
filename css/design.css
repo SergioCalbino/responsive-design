@@ -246,8 +246,6 @@ header #next_section img {
 
 
 
-
-
 #slider #skills {
     height: 300px;
     background: green;
@@ -464,7 +462,75 @@ footer .rrss a:nth-child(4):before {
     #slider #home .buttonspage > * {
         width: 150px;
     }
-}
+
+    #slider #aboutme .cardabout {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    #slider #aboutme .cardabout > * {
+        margin-top: 150px;
+        position: relative;
+        vertical-align:top;
+    }
+    
+    #slider #aboutme .cardabout p {
+        background: white;
+        width: 40%;
+        height: 40%;
+        padding: 5%;
+        
+    }
+
+    #slider #aboutme .cardabout p:before {
+        content: 'Sobre mi';
+        width: 45%;
+        background: #223D58;
+        position: relative;
+        top: -80px;
+        left: -100px;
+        color: white;
+        padding: 20px;
+        
+    }
+
+    #slider #aboutme .cardabout figure {
+        width: 100px;
+    }
+
+    /* #slider #aboutme .cardabout figure img {
+
+} */
+
+
+#slider #aboutme #what {
+    width: 100%;
+     /* Elimina el espacio en blanco entre elementos inline-block */
+  }
+  
+  #slider #aboutme #what .individual {
+    display: inline-block;
+    margin-top: 5%;
+    width: calc(25% - 6px); /* Divide el ancho en partes iguales */
+    height: 250px; /* Ajusta la altura deseada */
+    background: red;
+    margin: 2px; /* Ajusta los márgenes deseados */
+    padding: 5px;
+    color: white;
+   
+    box-sizing: border-box; /* Ajusta el modelo de caja para incluir padding en el ancho */
+  }
+  
+  #slider #aboutme #what p > * {
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+
+    
+  }
 
 @media screen and (min-width: 600px) {
     body {
