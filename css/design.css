@@ -388,10 +388,8 @@ footer:after {
     height: 80px;
     margin-left: -40px;
     color: white;
-    /* background: orange; */
     margin-top: -40px;
     border-radius: 50%;
-    /* background: black; */
     color: white;
     transform: rotate(180deg);
     font-size: 4em;
@@ -498,38 +496,83 @@ footer .rrss a:nth-child(4):before {
         width: 100px;
     }
 
-    /* #slider #aboutme .cardabout figure img {
 
-} */
-
-
-#slider #aboutme #what {
+    #slider #aboutme #what:before {
+        content: '¿ Que hago cómo desarrollador?';
+        width: 150px;
+        height: 50px;
+        background: #29abe2;
+        position: relative;
+        top: -100px;
+        left: 300px;
+        color: white;
+        padding: 2px;
+        
+    }
+    #slider #aboutme #what {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
     width: 100%;
-     /* Elimina el espacio en blanco entre elementos inline-block */
+    margin-top: 130px;
+    position: relative;
+    
   }
   
   #slider #aboutme #what .individual {
-    display: inline-block;
-    margin-top: 5%;
-    width: calc(25% - 6px); /* Divide el ancho en partes iguales */
-    height: 250px; /* Ajusta la altura deseada */
-    background: red;
-    margin: 2px; /* Ajusta los márgenes deseados */
-    padding: 5px;
+    background: #233D58;
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: hidden; /* Evita que el contenido desborde */
+    border: 2px solid black;
+    margin: 15px;
     color: white;
-   
-    box-sizing: border-box; /* Ajusta el modelo de caja para incluir padding en el ancho */
+
   }
-  
-  #slider #aboutme #what p > * {
-    /* display: block; */
-    width: 100%;
-    height: 100%;
+
+  #slider #aboutme #what #front:before {
+     content: "Front End";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px; /* Altura del zócalo */
+      background-color: #ff0000; /* Color del zócalo */
+    
+}
+  #slider #aboutme #what #back:before {
+     content: "Back End";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px; /* Altura del zócalo */
+      background-color: #ff0000; /* Color del zócalo */
+    
+}
+  #slider #aboutme #what #full:before {
+     content: "Full Stack";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px; /* Altura del zócalo */
+      background-color: #ff0000; /* Color del zócalo */
+    
+}
+
+  #slider #aboutme #what .individual p {
+    position: relative;
     text-align: center;
     color: white;
-    vertical-align: middle;
-
-    
+    box-sizing: border-box;
+    transform: translateY(200%); /* Oculta el texto inicialmente moviéndolo hacia abajo */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+  }
+  
+  #slider #aboutme #what .individual:hover p {
+    transform: translateY(0); /* Muestra el texto moviéndolo hacia arriba */
   }
 
 @media screen and (min-width: 600px) {
@@ -666,7 +709,7 @@ footer .rrss a:nth-child(4):before {
 
 @media screen and (min-width: 950px) {
     body {
-        /* background: #29abe2; */
+         background: #29abe2;
     }
     
 }
