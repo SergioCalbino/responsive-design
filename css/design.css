@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     font-family:  'Courier New', Courier, monospace;
-    /* background: #223D58; */
+    background: #223D58;
     position: relative;
 }
 
@@ -279,6 +279,10 @@ header #next_section img {
    background: white;
    top: 50px;
    text-align: center;
+   box-sizing: border-box;
+   padding-bottom: 70px;
+  
+
 }
 
 #slider #skills .all {
@@ -287,9 +291,10 @@ header #next_section img {
     -webkit-columns: 2; /* Para compatibilidad con navegadores webkit */
     -moz-columns: 2; /* Para compatibilidad con navegadores Firefox */
     column-gap: 20px; /* Espacio entre las columnas */
-    margin: 10px 100px;
+    margin: 10px 60px;
   
     border: 2px solid black;
+   
 }
 #slider #skills h3 {
     display: inline-block;
@@ -298,6 +303,10 @@ header #next_section img {
     display: inline-block;
     margin: 5px;
     
+}
+#slider #skills .tech:hover {
+    transform: scale(2); /* Ajusta la escala según tus preferencias */
+    transition: transform 0.6s;
 }
 
 #slider #skills #css {
@@ -339,19 +348,104 @@ header #next_section img {
 #slider #skills #postgre {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
-    color: blueviolet
-}
+    color: blueviolet;
     
+}
+#slider #skills #soft {
+    width: 50%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 10px 10px 10px red;
+                 
+  
+
+}
+
+#slider #skills #soft ul {
+    font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
+    font-style: normal; /* Cambia el estilo del texto según tus preferencias (normal, italic, oblique) */
+    color: #333333; /* Cambia el color del texto según tus preferencias */
+    
+}
+#slider #skills #soft li {
+    font-size: 20px;
+    position: relative;
+    text-shadow: 0px 0px 10px red;
  
-
-
-
-
+}
 
 #slider #portfolio {
-    height: 100px;
-    background: blue
+    width: 100%;
+   height: 100%;
+   position: relative;
+   background: white;
+   text-align: center;
+   box-sizing: border-box;
 }
+#slider #portfolio #proyectos {
+    width: 100%;
+    height: 100%;
+    top: 25px;
+    position: relative;
+    margin-top: 25px;
+    /* background: red; */
+}
+#slider #portfolio #proyectos .cards {
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    margin: 15px 10px;
+    position: relative;
+    /* background: red; */
+    padding: 5px;
+    box-sizing: border-box;
+    border: 5px solid black;
+    background:#F8931F;
+    
+}
+#slider #portfolio #proyectos .cards figure {
+    margin: 10px;
+}
+#slider #portfolio #proyectos .cards img {
+   width: 250px;
+   margin-bottom: 20px;
+}
+
+#slider #portfolio #proyectos .cards a {
+  display: inline;
+  width: 150px;
+  text-decoration: none;
+  background: #29abe2;
+  padding: 15px;
+  margin-top: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+
+}
+#slider #portfolio #proyectos .cards a:hover {
+ cursor: pointer;
+}
+
+#slider #portfolio #proyectos .cards p {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+
+
 #slider #blog {
     height: 100px;
     background: purple
@@ -543,10 +637,14 @@ footer .rrss a:nth-child(4):before {
 }
 
 @media screen and (min-width: 480px) {
+    body{
+        background: #233D58;
+    }
     #slider #home .mainlogo {
         width: 270PX;
         left: 50%;
         margin-left: -135px;
+        background: #233D58;
     }
     #slider #home .mainlogo h2 {
         font-size: 1.4em;
@@ -571,7 +669,8 @@ footer .rrss a:nth-child(4):before {
 
 @media screen and (min-width: 767px) {
     body {
-        /* background: yellow; */
+        background: #223D58;
+        height: 100%;
     }
     header {
         height: 50px
@@ -680,8 +779,36 @@ footer .rrss a:nth-child(4):before {
         background: #29abe2;
         border-radius: 50%;
 
-        
     }
+
+    #slider #skills {
+        width: 100%;
+        height: 200%;
+        position: relative;
+        background: white;
+        top: 50px;
+        text-align: center;
+        box-sizing: border-box;
+     
+     }
+     
+     #slider #skills .all {
+        /* display: flex;
+        flex-wrap: wrap;
+        width: 60%; */
+        columns: 3;
+        -webkit-columns: 3; /* Para compatibilidad con navegadores webkit */
+        -moz-columns: 3; /* Para compatibilidad con navegadores Firefox */
+        column-gap: 20px; /* Espacio entre las columnas */
+        /* margin: 10px 110px; */
+        margin-left: 25%;
+        width: 50%;
+        border: 2px solid black;
+     }
+     #slider #skills .tech {
+        box-sizing: border-box;
+    }
+   
 
     #contact_form {
         top: 50px;
@@ -697,18 +824,20 @@ footer .rrss a:nth-child(4):before {
 
 @media screen and (min-width: 950px) {
     body {
-         background: #29abe2;
+         /* background: #29abe2; */
     }
     
     #slider #aboutme .cardabout {
         display: inline-block;
         width: 100%;
         height: 100%;
+      
     }
     #slider #aboutme .cardabout > * {
         margin-top: 150px;
         position: relative;
         vertical-align:top;
+          background: white;
     }
     
     #slider #aboutme .cardabout p {
