@@ -222,6 +222,7 @@ header #next_section img {
     position: relative;
     padding: 15px 2.5%;
     top: 25px;
+   
     
 }
 
@@ -231,16 +232,19 @@ header #next_section img {
     border: 2px solid black;
     margin-bottom: 25px;
     text-align: center;
+    background: #FF8551;
 }
 
 #slider #aboutme .cardabout figure {
     top: 25px;
     width: 100%;
+    
 
 }
 #slider #aboutme img{
     width: 200px;
     margin-right: 50px;
+    border-radius: 25px;
 
 } 
 
@@ -257,8 +261,8 @@ header #next_section img {
     margin-top: 50px;
     padding: 10px;
     text-align: center;
+    background: #FF8551;
 }
-
 /* #slider #aboutme #what:before {
     content: '¿ Que hago cómo desarrollador?';
     width: 150px;
@@ -276,27 +280,27 @@ header #next_section img {
    width: 100%;
    height: 200%;
    position: relative;
-   background: white;
-   top: 50px;
+   background: #FFE4A7;
+   /* top: 50px; */
    text-align: center;
    box-sizing: border-box;
-   padding-bottom: 70px;
+   /* padding-bottom: 70px; */
   
 
 }
 
 #slider #skills .all {
-
     columns: 2;
     -webkit-columns: 2; /* Para compatibilidad con navegadores webkit */
     -moz-columns: 2; /* Para compatibilidad con navegadores Firefox */
     column-gap: 20px; /* Espacio entre las columnas */
     margin: 10px 60px;
-  
+    
     border: 2px solid black;
    
 }
-#slider #skills h3 {
+#slider #skills h1 {
+    margin-top: 100px;
     display: inline-block;
 }
 #slider #skills .tech {
@@ -361,9 +365,6 @@ header #next_section img {
     border-style: solid;
     border-width: 5px;
     box-shadow: 10px 10px 10px red;
-                 
-  
-
 }
 
 #slider #skills #soft ul {
@@ -381,31 +382,30 @@ header #next_section img {
 
 #slider #portfolio {
     width: 100%;
-   height: 100%;
-   position: relative;
-   background: white;
+   position: absolute;
    text-align: center;
-   box-sizing: border-box;
 }
 #slider #portfolio #proyectos {
     width: 100%;
     height: 100%;
-    top: 25px;
     position: relative;
     margin-top: 25px;
-    /* background: red; */
 }
 #slider #portfolio #proyectos .cards {
     display: inline-block;
     width: 80%;
-    height: 80%;
-    margin: 15px 10px;
+    height: 50%;
+   margin-top: 10px;
+   margin-bottom: 35px;
     position: relative;
-    /* background: red; */
     padding: 5px;
     box-sizing: border-box;
     border: 5px solid black;
-    background:#F8931F;
+    background: #FF8551;
+    
+}
+#slider #portfolio #proyectos  div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 #slider #portfolio #proyectos .cards figure {
@@ -420,7 +420,7 @@ header #next_section img {
   display: inline;
   width: 150px;
   text-decoration: none;
-  background: #29abe2;
+  background:#223D58;
   padding: 15px;
   margin-top: 10px;
   margin: 5px;
@@ -783,12 +783,12 @@ footer .rrss a:nth-child(4):before {
 
     #slider #skills {
         width: 100%;
-        height: 200%;
+        /* height: 200%; */
         position: relative;
-        background: white;
-        top: 50px;
+        background: #FFE4A7;
+        /* top: 50px; */
         text-align: center;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
      
      }
      
@@ -803,12 +803,61 @@ footer .rrss a:nth-child(4):before {
         /* margin: 10px 110px; */
         margin-left: 25%;
         width: 50%;
+        height: 30%;
         border: 2px solid black;
+        padding: 10px;
+        background: wheat;
+       
      }
-     #slider #skills .tech {
+     #slider #skills .all .tech {
         box-sizing: border-box;
     }
+     #slider #skills #soft {
+        width: 50%;
+        height: 20%;
+        background: wheat;
    
+     }
+
+     #slider #portfolio {
+        position: relative;
+        margin: 0;
+        bottom: 2;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    #slider #portfolio #proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #slider #portfolio #proyectos .cards {
+        margin: 5px;
+    flex-basis: 33.33%;
+    height: 350px;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 50px;
+    }
+    #slider #portfolio #proyectos .cards figure {
+        margin: 10px;
+    }
+    #slider #portfolio #proyectos .cards img {
+       /* display: none; */
+    }
+    
+    #slider #portfolio #proyectos .cards a {
+      display: inline;
+      width: 150px;
+     
+      border-radius: 5px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+    
+    }
 
     #contact_form {
         top: 50px;
@@ -837,7 +886,7 @@ footer .rrss a:nth-child(4):before {
         margin-top: 150px;
         position: relative;
         vertical-align:top;
-          background: white;
+        background: white;
     }
     
     #slider #aboutme .cardabout p {
