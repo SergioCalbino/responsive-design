@@ -222,6 +222,7 @@ header #next_section img {
     position: relative;
     padding: 15px 2.5%;
     top: 25px;
+   
     
 }
 
@@ -231,16 +232,19 @@ header #next_section img {
     border: 2px solid black;
     margin-bottom: 25px;
     text-align: center;
+    background: #FF8551;
 }
 
 #slider #aboutme .cardabout figure {
     top: 25px;
     width: 100%;
+    
 
 }
 #slider #aboutme img{
     width: 200px;
     margin-right: 50px;
+    border-radius: 25px;
 
 } 
 
@@ -257,8 +261,8 @@ header #next_section img {
     margin-top: 50px;
     padding: 10px;
     text-align: center;
+    background: #FF8551;
 }
-
 /* #slider #aboutme #what:before {
     content: '¿ Que hago cómo desarrollador?';
     width: 150px;
@@ -272,18 +276,176 @@ header #next_section img {
     
 } */
 
-
-
-
-
 #slider #skills {
-    height: 300px;
-    background: green;
+   width: 100%;
+   height: 200%;
+   position: relative;
+   background: #FFE4A7;
+   /* top: 50px; */
+   text-align: center;
+   box-sizing: border-box;
+   /* padding-bottom: 70px; */
+  
+
 }
+
+#slider #skills .all {
+    columns: 2;
+    -webkit-columns: 2; /* Para compatibilidad con navegadores webkit */
+    -moz-columns: 2; /* Para compatibilidad con navegadores Firefox */
+    column-gap: 20px; /* Espacio entre las columnas */
+    margin: 10px 60px;
+    
+    border: 2px solid black;
+   
+}
+#slider #skills h1 {
+    margin-top: 100px;
+    display: inline-block;
+}
+#slider #skills .tech {
+    display: inline-block;
+    margin: 5px;
+    
+}
+#slider #skills .tech:hover {
+    transform: scale(2); /* Ajusta la escala según tus preferencias */
+    transition: transform 0.6s;
+}
+
+#slider #skills #css {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: blue;
+}
+#slider #skills #html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: red;
+}
+#slider #skills #js {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: rgb(223, 223, 34)
+}
+#slider #skills #react {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: rgb(49, 49, 141);
+}
+#slider #skills #node {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: rgb(51, 157, 51)
+}
+#slider #skills #mongo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: rgb(51, 157, 51)
+}
+#slider #skills #mysql {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: blueviolet
+}
+    
+#slider #skills #postgre {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: blueviolet;
+    
+}
+#slider #skills #soft {
+    width: 50%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 10px 10px 10px red;
+}
+
+#slider #skills #soft ul {
+    font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
+    font-style: normal; /* Cambia el estilo del texto según tus preferencias (normal, italic, oblique) */
+    color: #333333; /* Cambia el color del texto según tus preferencias */
+    
+}
+#slider #skills #soft li {
+    font-size: 20px;
+    position: relative;
+    text-shadow: 0px 0px 10px red;
+ 
+}
+
 #slider #portfolio {
-    height: 200px;
-    background: blue
+    width: 100%;
+   position: absolute;
+   text-align: center;
 }
+#slider #portfolio #proyectos {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 25px;
+}
+#slider #portfolio #proyectos .cards {
+    display: inline-block;
+    width: 80%;
+    height: 50%;
+   margin-top: 10px;
+   margin-bottom: 35px;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 5px solid black;
+    background: #FF8551;
+    
+}
+#slider #portfolio #proyectos  div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#slider #portfolio #proyectos .cards figure {
+    margin: 10px;
+}
+#slider #portfolio #proyectos .cards img {
+   width: 250px;
+   margin-bottom: 20px;
+}
+
+#slider #portfolio #proyectos .cards a {
+  display: inline;
+  width: 150px;
+  text-decoration: none;
+  background:#223D58;
+  padding: 15px;
+  margin-top: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+
+}
+#slider #portfolio #proyectos .cards a:hover {
+ cursor: pointer;
+}
+
+#slider #portfolio #proyectos .cards p {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+
+
 #slider #blog {
     height: 100px;
     background: purple
@@ -475,10 +637,14 @@ footer .rrss a:nth-child(4):before {
 }
 
 @media screen and (min-width: 480px) {
+    body{
+        background: #233D58;
+    }
     #slider #home .mainlogo {
         width: 270PX;
         left: 50%;
         margin-left: -135px;
+        background: #233D58;
     }
     #slider #home .mainlogo h2 {
         font-size: 1.4em;
@@ -503,7 +669,8 @@ footer .rrss a:nth-child(4):before {
 
 @media screen and (min-width: 767px) {
     body {
-        /* background: yellow; */
+        background: #223D58;
+        height: 100%;
     }
     header {
         height: 50px
@@ -612,7 +779,84 @@ footer .rrss a:nth-child(4):before {
         background: #29abe2;
         border-radius: 50%;
 
-        
+    }
+
+    #slider #skills {
+        width: 100%;
+        /* height: 200%; */
+        position: relative;
+        background: #FFE4A7;
+        /* top: 50px; */
+        text-align: center;
+        /* box-sizing: border-box; */
+     
+     }
+     
+     #slider #skills .all {
+        /* display: flex;
+        flex-wrap: wrap;
+        width: 60%; */
+        columns: 3;
+        -webkit-columns: 3; /* Para compatibilidad con navegadores webkit */
+        -moz-columns: 3; /* Para compatibilidad con navegadores Firefox */
+        column-gap: 20px; /* Espacio entre las columnas */
+        /* margin: 10px 110px; */
+        margin-left: 25%;
+        width: 50%;
+        height: 30%;
+        border: 2px solid black;
+        padding: 10px;
+        background: wheat;
+       
+     }
+     #slider #skills .all .tech {
+        box-sizing: border-box;
+    }
+     #slider #skills #soft {
+        width: 50%;
+        height: 20%;
+        background: wheat;
+   
+     }
+
+     #slider #portfolio {
+        position: relative;
+        margin: 0;
+        bottom: 2;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    #slider #portfolio #proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #slider #portfolio #proyectos .cards {
+        margin: 5px;
+    flex-basis: 33.33%;
+    height: 350px;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 50px;
+    }
+    #slider #portfolio #proyectos .cards figure {
+        margin: 10px;
+    }
+    #slider #portfolio #proyectos .cards img {
+       /* display: none; */
+    }
+    
+    #slider #portfolio #proyectos .cards a {
+      display: inline;
+      width: 150px;
+     
+      border-radius: 5px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+    
     }
 
     #contact_form {
@@ -629,18 +873,20 @@ footer .rrss a:nth-child(4):before {
 
 @media screen and (min-width: 950px) {
     body {
-         background: #29abe2;
+         /* background: #29abe2; */
     }
     
     #slider #aboutme .cardabout {
         display: inline-block;
         width: 100%;
         height: 100%;
+      
     }
     #slider #aboutme .cardabout > * {
         margin-top: 150px;
         position: relative;
         vertical-align:top;
+        background: white;
     }
     
     #slider #aboutme .cardabout p {
