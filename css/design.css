@@ -212,15 +212,17 @@ header #next_section img {
     position: relative;
     text-align: center;
     padding-bottom: 70px;
+    box-sizing: border-box;
+    width: 100%;
 
 }
 
 #slider #aboutme .cardabout > * {
     display: inline-block;
-    width: 40%;
-    margin: 5px 2.5%;
+    width: 100%;
+    margin: 0;
     position: relative;
-    padding: 15px 2.5%;
+    /* padding: 15px 2.5%; */
     top: 25px;
    
     
@@ -233,6 +235,7 @@ header #next_section img {
     margin-bottom: 25px;
     text-align: center;
     background: #FF8551;
+    margin-top: 15px;
 }
 
 #slider #aboutme .cardabout p:before {
@@ -240,7 +243,7 @@ header #next_section img {
     width: 45%;
     background: #223D58;
     position: relative;
-    top: -80px;
+    top: -45px;
     left: 30%;
     color: white;
     padding: 20px;
@@ -941,6 +944,8 @@ footer .rrss a:nth-child(4):before {
         width: 40%;
         height: 40%;
         padding: 5%;
+        margin: 100px;
+        margin-left: 100px;
         
     }
 
@@ -949,7 +954,7 @@ footer .rrss a:nth-child(4):before {
         width: 45%;
         background: #223D58;
         position: relative;
-        top: -80px;
+        top: -100px;
         left: -100px;
         color: white;
         padding: 20px;
@@ -958,6 +963,7 @@ footer .rrss a:nth-child(4):before {
 
     #slider #aboutme .cardabout figure {
         width: 100px;
+        margin-left: 100px;
     }
 
 
