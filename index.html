@@ -48,7 +48,7 @@
                     <li><a onclick = "navSection('aboutme') "href="#">Sobre mi</a></li>
                     <li><a onclick = "navSection('skills') "href="#">Skills</a></li>
                     <li><a onclick = "navSection('portfolio') "href="#">Portfolio</a></li>
-                    <li><a onclick = "navSection('blog') "href="#">Blog</a></li>
+                    <!-- <li><a onclick = "navSection('blog') "href="#">Blog</a></li> -->
                     <li><a onclick="displayFormContact('block') "href="#" >Contacto</a></li>
                 </ul>
             </div>
@@ -262,18 +262,22 @@
                 </div>
             </div>
         </section>
-        <section class="slide" id="blog" style="display:none"></section>
+        <!-- <section class="slide" id="blog" style="display:none"></section> -->
     </div>
 
     <div id="contact_form">
-        <form action="contact.php" id="form1" name="form1" method="post">
+        <form  id="form1" name="form1" method="post">
             <div id="close_form" onclick="closeForm('none')" ></div>
             <figure id="logo_mensaje"> <img src="/public/carta2.png" alt=""> </figure>
-            <p>Hola!</p>
-            <input type="text" name="name" id="name" placeholder="Tu nombre" >
-            <input type="email" name="email" id="email" placeholder="Tu email" >
-            <textarea name="message" id="message" placeholder="Escribe un mensaje" ></textarea>
-            <input type="submit" name="Submit" id="button" value="ENVIAR">
+            <p>Contactame a traves de:</p>
+            <p>Whatsapp : 1161219480 </p>
+            <p>Email: serggio.c86@gmail.com</p>
+            <p>Linkelind: https://www.linkedin.com/in/sergio-oscar/</p>
+            <!-- <input type="text" name="name" id="name" disabled placeholder="whatsapp : 1161219480" >
+            <input type="email" name="email" id="email" disabled placeholder="Email: serggio.c86@gmail.com" >
+            <input type="email" name="email" id="email" disabled placeholder="Linkelind: https://www.linkedin.com/in/sergio-oscar/" > -->
+            <!-- <textarea name="message" id="message" placeholder="Escribe un mensaje" ></textarea> -->
+            <!-- <input type="submit" name="Submit" id="button" value="ENVIAR"> -->
         </form>
     </div>
 
@@ -296,7 +300,7 @@
             sections[1] = "aboutme"
             sections[2] = "skills"
             sections[3] = "portfolio"
-            sections[4] = "blog"
+            // sections[4] = "blog"
         
         function displayMenu() {
            let display;
@@ -330,7 +334,7 @@
             let searh;
             let show;
             
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < 4; i++) {
                 searh = document.getElementById(sections[i])
                 searh.style.display = 'none';
 
@@ -348,7 +352,7 @@
 
             let searh;
             let show;
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < 4; i++) {
                 searh = document.getElementById(sections[i])
                 show = searh.style.display;
 
@@ -356,14 +360,14 @@
                     searh.style.display = 'none';
                     if (nav === 'next') {
                         i++;
-                        if (i > 4) {
+                        if (i > 3) {
                             i = 0;
                         }
                     }
                     if (nav === 'prev') {
                         i--
                         if (i < 0) {
-                            i = 4;
+                            i = 3;
                         }
                     }
                     searh = document.getElementById(sections[i])

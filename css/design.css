@@ -508,7 +508,8 @@ header #next_section img {
 }
 
 #contact_form input, 
-#contact_form textarea {
+#contact_form textarea,
+#contact_form p {
     display: block;
     margin: 20px;
     border: none;
@@ -518,6 +519,7 @@ header #next_section img {
     padding-bottom: 3px;
     margin-bottom: 50px;
     font-weight: bold;
+    font-size: small;
 }
 
 #contact_form #button {
