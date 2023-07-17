@@ -366,6 +366,11 @@ header #next_section img {
     font-weight: 600;
     color: blue;
 }
+#slider #skills #bt {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: purple;
+}
 #slider #skills #html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
@@ -374,12 +379,17 @@ header #next_section img {
 #slider #skills #js {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
-    color: rgb(223, 223, 34)
+    color: rgb(97, 97, 58)
 }
 #slider #skills #react {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
     color: rgb(49, 49, 141);
+}
+#slider #skills #next {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: bac
 }
 #slider #skills #node {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -398,6 +408,12 @@ header #next_section img {
 }
     
 #slider #skills #postgre {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: blueviolet;
+    
+}
+#slider #skills #strapi {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
     color: blueviolet;
@@ -861,14 +877,16 @@ footer .rrss a:nth-child(4):before {
         /* display: flex;
         flex-wrap: wrap;
         width: 60%; */
-        columns: 3;
-        -webkit-columns: 3; /* Para compatibilidad con navegadores webkit */
+        columns: 5;
+        -webkit-columns: 5; /* Para compatibilidad con navegadores webkit */
         -moz-columns: 3; /* Para compatibilidad con navegadores Firefox */
-        column-gap: 20px; /* Espacio entre las columnas */
-        /* margin: 10px 110px; */
+        column-gap: 0; /* Espacio entre las columnas */
+        margin: 10px;
         margin-left: 25%;
+        margin-right: 25%;
         width: 50%;
-        height: 30%;
+
+        height: 20%;
         border: 2px solid black;
         padding: 10px;
         background: wheat;
