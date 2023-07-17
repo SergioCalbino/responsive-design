@@ -432,12 +432,15 @@ header #next_section img {
     width: 100%;
    position: absolute;
    text-align: center;
+   background: #223D58;
 }
 #slider #portfolio #proyectos {
     width: 100%;
     height: 100%;
     position: relative;
     margin-top: 25px;
+   background: #223D58;
+
 }
 #slider #portfolio #proyectos .cards {
     display: inline-block;
@@ -448,8 +451,8 @@ header #next_section img {
     position: relative;
     padding: 5px;
     box-sizing: border-box;
-    border: 5px solid black;
-    background: #FF8551;
+    /* border: 5px solid black; */
+    background: white;
     
 }
 #slider #portfolio #proyectos  div {
@@ -612,7 +615,7 @@ footer {
     z-index: 90;
     height: 150px;
     position: fixed;
-    bottom:  -130px;
+    bottom:  -120px;
     transition-duration: 0.4s;
 }
 
@@ -831,6 +834,18 @@ footer .rrss a:nth-child(4):before {
 
     }
 
+    /* footer {
+        width: 100%;
+        background: black;
+        color: white;
+        text-align: center;
+        z-index: 90;
+        height: 150px;
+        position: fixed;
+        bottom:  -120px;
+        transition-duration: 0.4s;
+    } */
+
     #slider #skills {
         width: 100%;
         /* height: 200%; */
@@ -871,32 +886,59 @@ footer .rrss a:nth-child(4):before {
 
      #slider #portfolio {
         position: relative;
-        margin: 0;
-        bottom: 2;
+        margin-top: 0;
+        margin-bottom: -150px;
         width: 100%;
         text-align: center;
         box-sizing: border-box;
     }
     
     #slider #portfolio #proyectos {
+        /* position: absolute; */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        background: #223D58;
+       
+
+        
     }
     
     #slider #portfolio #proyectos .cards {
         margin: 5px;
-    flex-basis: 33.33%;
-    height: 350px;
-    align-items: center;
-    vertical-align: middle;
-    margin-bottom: 50px;
+        flex-basis: 33.33%;
+        height: auto;
+        /* width: 50%; */
+        align-items: center;
+        vertical-align: middle;
+        background: white;
+       
+        
+        
     }
+    #slider #portfolio #proyectos .last {
+       /* background-color: red; */
+       margin-bottom: -650px;
+       
+        
+        
+    }
+    
+        
+    #slider #portfolio #proyectos .cards ul li {
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+
     #slider #portfolio #proyectos .cards figure {
-        margin: 10px;
+        /* margin: 10px;
+        width: 250px; */
     }
-    #slider #portfolio #proyectos .cards img {
-       /* display: none; */
+    #slider #portfolio #proyectos .cards figure img {
+        margin: 10px;
+        width: 250px;
+        height: 180px;
     }
     
     #slider #portfolio #proyectos .cards a {
